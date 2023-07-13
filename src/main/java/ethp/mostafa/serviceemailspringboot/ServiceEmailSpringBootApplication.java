@@ -24,8 +24,9 @@ public class ServiceEmailSpringBootApplication {
                     .recipient("sissiessaadia667@gmail.com")
                     .subject("Test Email")
                     .msgBody("Hello fom service mailing")
+                    .attachment("C:\\Users\\hp\\Desktop\\download.jpg")
                     .build();
-            System.out.println(emailService.sendSimpleMail(emailDetails));
+            System.out.println(emailService.sendMailWithAttachment(emailDetails));
 
         };
     }
